@@ -20,9 +20,11 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { IoMdSunny } from "react-icons/io";
 import { RiSearch2Line, RiHeart3Fill } from "react-icons/ri";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
+
 
 const Header = () => {
+
   return (
     <Navbar maxWidth="xl" className="w-full py-2 bg-dark">
       <NavbarContent justify="center">
@@ -122,7 +124,7 @@ const Header = () => {
                   transition: { duration: 1 },
                 }}
               >
-                <RiHeart3Fill className="text-[#f31260] text-2xl" />
+                <RiHeart3Fill  className="text-[#f31260] text-2xl" />
               </motion.div>
             }
             className="bg-[#27272a] text-white max-md:hidden"

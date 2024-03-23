@@ -3,9 +3,6 @@
 import { Button } from "@nextui-org/react";
 import { Container } from ".";
 import { FaGithub } from "react-icons/fa";
-import { MdArrowRight } from "react-icons/md";
-import { RiArrowDropRightFill } from "react-icons/ri";
-import { FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Welcome() {
@@ -24,7 +21,7 @@ export default function Welcome() {
           <div className="flex items-center gap-4 md:flex-row flex-col">
             <Button 
              className="rounded-full bg-[#0070f0] md:py-6 md:px-7 max-md:w-full text-white text-base border-2 border-[#0070f0]"
-             endContent={<FaArrowRight />}
+             endContent={<IoIosArrowRoundForward className="text-xl"/>}
              >
               Get Started
             </Button>

@@ -9,7 +9,7 @@ export default function About() {
         {/* heading start */}
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="">
-            <h3 className="lg:text-5xl md:text-4xl text-3xl text-white font-semibold leading-tight">
+            <h3 className="lg:text-6xl md:text-4xl text-3xl text-white font-semibold leading-tight">
               Apply your own <br />{" "}
               <span className="text-[#0070f0]">theming</span> decisions.
             </h3>
