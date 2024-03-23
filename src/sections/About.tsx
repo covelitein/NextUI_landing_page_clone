@@ -13,7 +13,7 @@ export default function About() {
               Apply your own <br />{" "}
               <span className="text-[#0070f0]">theming</span> decisions.
             </h3>
-            <h5 className="font-[500] text-[#a1a1aa] lg:text-lg text-base mt-3">
+            <h5 className="font-[400] text-[#a1a1aa] lg:text-xl text-base mt-3">
               NextUI provides a custom TailwindCSS plugin that allows you to
               customize the default themes or create your own.
             </h5>
@@ -41,51 +41,51 @@ export default function About() {
               {/* code heading end */}
 
               {/* code main start */}
-              <div className="mt-5 text-[#afaeae]">
+              <div className="mt-5 text-[#c0bfbf]">
                 <span className="text-[#935aa2]">{"const"}</span>
                 <span className="">{" { nextui } = "}</span>
-                <span className="text-[#4e8abb]">{"require"}</span>
+                <span className="text-[#61afef]">{"require"}</span>
                 <span className="">{"("}</span>
-                <span className="text-[#597047]">{'"@nextui-org/react"'}</span>
+                <span className="text-[#98c379]">{'"@nextui-org/react"'}</span>
                 <span className="">{");"}</span>
               </div>
 
-              <div className="mt-5 text-[#afaeae]">
+              <div className="mt-5 text-[#c0bfbf]">
                 <div className="mb-1">{"module.exports = {"}</div>
                 <div className="mb-1 ml-3 text-[#a1a1aa]">{"// ..."}</div>
 
-                <div className="mb-1 ml-3 text-[#a1a1aa]">{"plugins: ["}</div>
+                <div className="mb-1 ml-3 text-[#c0bfbf]">{"plugins: ["}</div>
 
-                <div className="mb-1 ml-7 text-[#a1a1aa]">
-                  <span className="text-[#4e8abb]">{"nextui"}</span>
+                <div className="mb-1 ml-7 text-[#c0bfbf]">
+                  <span className="text-[#61afef]">{"nextui"}</span>
                   <span>{"({"}</span>
                 </div>
-                <div className="mb-1 ml-12 text-[#a1a1aa]">{"themes: {"}</div>
+                <div className="mb-1 ml-12 text-[#c0bfbf]">{"themes: {"}</div>
 
-                <div className="mb-1 ml-16 text-[#a1a1aa]">{"light: {"}</div>
+                <div className="mb-1 ml-16 text-[#c0bfbf]">{"light: {"}</div>
                 <div className="mb-1 ml-[4.8rem] text-[#a1a1aa]">
                   {"colors: {"}
                 </div>
-                <div className="mb-1 ml-[6.2rem] text-[#a1a1aa]">
+                <div className="mb-1 ml-[6.2rem] text-[#c0bfbf]">
                   <span className="">{"primary: "}</span>
-                  <span className="text-[#597047]">{'"#0072f5"'}</span>
+                  <span className="text-[#98c379]">{'"#0072f5"'}</span>
                   <span>{","}</span>
                 </div>
-                <div className="mb-1 ml-[4.9rem] text-[#a1a1aa]">{"}"}</div>
-                <div className="mb-1 ml-16 text-[#a1a1aa]">{"},"}</div>
-                <div className="mb-1 ml-16 text-[#a1a1aa]">{"dark: {"}</div>
-                <div className="mb-1 ml-[4.9rem] text-[#a1a1aa]">
+                <div className="mb-1 ml-[4.9rem] text-[#c0bfbf]">{"}"}</div>
+                <div className="mb-1 ml-16 text-[#c0bfbf]">{"},"}</div>
+                <div className="mb-1 ml-16 text-[#c0bfbf]">{"dark: {"}</div>
+                <div className="mb-1 ml-[4.9rem] text-[#c0bfbf]">
                   {"colors: {"}
                 </div>
-                <div className="mb-1 ml-[6.2rem] text-[#a1a1aa]">
+                <div className="mb-1 ml-[6.2rem] text-[#c0bfbf]">
                   <span className="">{"primary: "}</span>
-                  <span className="text-[#597047]">{'"#0072f5"'}</span>
+                  <span className="text-[#98c379]">{'"#0072f5"'}</span>
                   <span>{","}</span>
                 </div>
-                <div className="mb-1 ml-[5rem] text-[#a1a1aa]">{"}"}</div>
-                <div className="mb-1 ml-16 text-[#a1a1aa]">{"},"}</div>
-                <div className="mb-1 ml-12 text-[#a1a1aa]">{"},"}</div>
-                <div className="mb-1 ml-7 text-[#a1a1aa]">{"}),"}</div>
+                <div className="mb-1 ml-[5rem] text-[#c0bfbf]">{"}"}</div>
+                <div className="mb-1 ml-16 text-[#c0bfbf]">{"},"}</div>
+                <div className="mb-1 ml-12 text-[#c0bfbf]">{"},"}</div>
+                <div className="mb-1 ml-7 text-[#c0bfbf]">{"}),"}</div>
               </div>
 
               {/* code main end */}

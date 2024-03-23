@@ -2,7 +2,7 @@ import { Welcome, Header, Features, About } from "@/sections";
 
 export default function Home() {
   return (
-    <main className="bg-[#000000] text-white">
+    <main className="bg-[#000000] text-[#ecedee]">
       {/* header start */}
       <Header />
       {/* header end */}

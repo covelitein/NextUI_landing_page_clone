@@ -24,7 +24,7 @@ import { animate, motion } from "framer-motion";
 
 
 const Header = () => {
-
+  
   return (
     <Navbar maxWidth="xl" className="w-full py-2 bg-dark">
       <NavbarContent justify="center">
@@ -37,7 +37,7 @@ const Header = () => {
               size="sm"
               className="bg-[#202022] text-white py-0 rounded-full max-sm:hidden"
             >
-              <span className="text-sm">v2.2.10</span>
+              v2.2.10
             </Button>
           </DropdownTrigger>
           <DropdownMenu>
@@ -106,7 +106,7 @@ const Header = () => {
           <Button
             startContent={<RiSearch2Line className="text-[#a1a1aa] text-2xl" />}
             endContent={
-              <span className="py-1 px-3 border-[#a1a1aa] border-[0.0003px] bg-[#27272a] rounded-xl">
+              <span className="py-1 px-3 shadow-xl bg-[#27272a] rounded-xl">
                 ^K
               </span>
             }
