@@ -13,7 +13,7 @@ export default function Welcome() {
         <div className="absolute -top-20 lg:top-10 w-screen h-screen z-0 opacity-0 overflow-hidden data-[mounted=true]:opacity-100 transition-opacity bg-left looper-bg after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1]  after:z-[-1]" data-mounted="true"></div>
       {/* absolute looper end */}
 
-      <Container className="grid lg:grid-cols-2 min-h-[90vh]">
+      <Container className="grid lg:grid-cols-2 min-h-screen">
         {/* writeup col start */}
         <div className="flex justify-center flex-col gap-9">
           <h3 className="lg:text-5xl text-4xl leading-tight font-bold md:text-left text-center">

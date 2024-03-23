@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useCallback, useState } from "react";
 import { Container } from ".";
-import { Code, Image } from "@nextui-org/react";
+import { Button, Code } from "@nextui-org/react";
+import { TabElegant, TabModern, TabRetro, TabUI } from "@/components/svgs";
 
 export default function About() {
+  const [activeTab, setActiveTab] = useState("tab-1");
+
   return (
     <section className="py-20">
       <Container className="">
@@ -24,35 +28,73 @@ export default function About() {
         {/* main content start */}
         <main className="grid lg:grid-cols-2 grid-cols-1 mt-14 max-lg:gap-7 gap-4">
           {/* card start */}
-          <div className="">
-            <div className="flex items-center sm:gap-7 gap-6 mb-5">
-              <button className="flex flex-col items-center justify-center gap-3">
-                <Image src="/svgs/tab_UI.svg"/>
-                <h3 className="text-[#a1a1aa]">NextUI</h3>
+          <div className="mt-5">
+            <div className="flex items-center sm:gap-7 gap-6 mb-10">
+              {/* tab1 start */}
+              <button
+                className={`${
+                  activeTab == `tab-1` ? `text-[#0070F0]` : "text-[#a1a1aa]"
+                } flex flex-col items-center justify-center gap-3`}
+                onClick={() => setActiveTab(`tab-1`)}
+              >
+                <TabUI defaultColor={'#ffffff'} activeColor={'#0070F0'} isActive={activeTab == `tab-1` }/>
+                <h3>NextUI</h3>
               </button>
-              <button className="flex flex-col items-center justify-center gap-3">
-                <Image src="/svgs/tab_Modern.svg"/>
-                <h3 className="text-[#a1a1aa]">Modern</h3>
+              {/* tab1 end */}
+
+              {/* tab2 start */}
+              <button
+                className={`${
+                  activeTab == `tab-2` ? `text-[#9455d3]` : "text-[#a1a1aa]"
+                } flex flex-col items-center justify-center gap-3`}
+                onClick={() => setActiveTab(`tab-2`)}
+              >
+                <TabModern defaultColor={'#71717A'} activeColor={'#9455d3'} isActive={activeTab == `tab-2` }/>
+                <h3>Modern</h3>
               </button>
-              <button className="flex flex-col items-center justify-center gap-3">
-                <Image src="/svgs/tab_Elegant.svg"/>
-                <h3 className="text-[#a1a1aa]">Elegant</h3>
+              {/* tab2 end */}
+
+              {/* tab3 start */}
+              <button
+                className={`${
+                  activeTab == `tab-3` ? `text-[#ffffff]` : "text-[#a1a1aa]"
+                } flex flex-col items-center justify-center gap-3`}
+                onClick={() => setActiveTab(`tab-3`)}
+              >
+                <TabElegant defaultColor={'#71717A'} activeColor={'#ffffff'} isActive={activeTab == `tab-3` }/>
+                <h3>Elegant</h3>
               </button>
-              <button className="flex flex-col items-center justify-center gap-3">
-                <Image src="/svgs/tab_Retro.svg"/>
-                <h3 className="text-[#a1a1aa]">Retro</h3>
+              {/* tab3 end */}
+
+              {/* tab4 start */}
+              <button
+                className={`${
+                  activeTab == `tab-4` ? `text-[#f5a524]` : "text-[#a1a1aa]"
+                } flex flex-col items-center justify-center gap-3`}
+                onClick={() => setActiveTab(`tab-4`)}
+              >
+                <TabRetro defaultColor={'#71717A'} activeColor={'#f5a524'} isActive={activeTab == `tab-4` }/>
+                <h3>Retro</h3>
               </button>
+              {/* tab4 end */}
             </div>
 
-            <div className="flex flex-col relative height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 bg-[#18181b] data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none overflow-visible h-auto lg:h-[240px]" tabIndex={-1}>
-                
-              </div>
+            <div
+              className="flex flex-col relative height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 bg-[#18181b] data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none overflow-visible h-auto lg:h-[240px]"
+              tabIndex={-1}
+            ></div>
+
+            {/* learn button start */}
+            <div className="mt-7">
+               <Button className="text-sm text-[#015bc4] bg-[#031726] rounded-full -py-5 px-3">Learn more</Button>
+            </div>
+            {/* learn button end */}
           </div>
           {/* card end */}
 
           {/* code start */}
           <div className="">
-            <Code className="w-full bg-[#0b0b0c] p-5 overflow-hidden">
+            <Code className="w-full bg-[#0b0b0c] p-3 overflow-hidden h-[29rem]">
               {/* code heading start */}
               <div className="w-full flex justify-between">
                 <div className="flex items-center gap-2">
@@ -64,7 +106,7 @@ export default function About() {
               {/* code heading end */}
 
               {/* code main start */}
-              <div className="mt-5 text-[#c0bfbf]">
+              <div className="mt-3 text-[#c0bfbf]">
                 <span className="text-[#935aa2]">{"const"}</span>
                 <span className="">{" { nextui } = "}</span>
                 <span className="text-[#61afef]">{"require"}</span>
@@ -73,7 +115,7 @@ export default function About() {
                 <span className="">{");"}</span>
               </div>
 
-              <div className="mt-5 text-[#c0bfbf]">
+              <div className="mt-3 text-[#c0bfbf]">
                 <div className="mb-1">{"module.exports = {"}</div>
                 <div className="mb-1 ml-3 text-[#a1a1aa]">{"// ..."}</div>
 

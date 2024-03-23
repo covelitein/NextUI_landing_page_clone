@@ -26,7 +26,7 @@ import { animate, motion } from "framer-motion";
 const Header = () => {
   
   return (
-    <Navbar maxWidth="xl" className="w-full bg-dark">
+    <Navbar maxWidth="xl" className="w-full bg-dark py-1">
       <NavbarContent justify="center">
         <NavbarBrand className="text-3xl font-[400]">NextUI</NavbarBrand>
         {/* version button start */}
