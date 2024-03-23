@@ -13,11 +13,11 @@ export default function About() {
         {/* heading start */}
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="">
-            <h3 className="lg:text-6xl md:text-4xl text-3xl text-white font-semibold leading-tight">
+            <h3 className="lg:text-6xl sm:text-4xl text-[30px] text-white font-bold leading-tight">
               Apply your own <br />{" "}
               <span className="text-[#0070f0]">theming</span> decisions.
             </h3>
-            <h5 className="font-[400] text-[#a1a1aa] lg:text-xl text-base mt-3">
+            <h5 className="font-[400] text-[#a1a1aa] lg:text-xl text-[18.4px] mt-3">
               NextUI provides a custom TailwindCSS plugin that allows you to
               customize the default themes or create your own.
             </h5>
