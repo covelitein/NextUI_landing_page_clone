@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from ".";
-import { Code } from "@nextui-org/react";
+import { Code, Image } from "@nextui-org/react";
 
 export default function About() {
   return (
@@ -22,9 +22,32 @@ export default function About() {
         {/* heading end */}
 
         {/* main content start */}
-        <main className="grid lg:grid-cols-2 grid-cols-1 mt-7">
+        <main className="grid lg:grid-cols-2 grid-cols-1 mt-14 max-lg:gap-7 gap-4">
           {/* card start */}
-          <div className=""></div>
+          <div className="">
+            <div className="flex items-center sm:gap-7 gap-6 mb-5">
+              <button className="flex flex-col items-center justify-center gap-3">
+                <Image src="/svgs/tab_UI.svg"/>
+                <h3 className="text-[#a1a1aa]">NextUI</h3>
+              </button>
+              <button className="flex flex-col items-center justify-center gap-3">
+                <Image src="/svgs/tab_Modern.svg"/>
+                <h3 className="text-[#a1a1aa]">Modern</h3>
+              </button>
+              <button className="flex flex-col items-center justify-center gap-3">
+                <Image src="/svgs/tab_Elegant.svg"/>
+                <h3 className="text-[#a1a1aa]">Elegant</h3>
+              </button>
+              <button className="flex flex-col items-center justify-center gap-3">
+                <Image src="/svgs/tab_Retro.svg"/>
+                <h3 className="text-[#a1a1aa]">Retro</h3>
+              </button>
+            </div>
+
+            <div className="flex flex-col relative height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 bg-[#18181b] data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none overflow-visible h-auto lg:h-[240px]" tabIndex={-1}>
+                
+              </div>
+          </div>
           {/* card end */}
 
           {/* code start */}

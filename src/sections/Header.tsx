@@ -26,16 +26,16 @@ import { animate, motion } from "framer-motion";
 const Header = () => {
   
   return (
-    <Navbar maxWidth="xl" className="w-full py-2 bg-dark">
+    <Navbar maxWidth="xl" className="w-full bg-dark">
       <NavbarContent justify="center">
-        <NavbarBrand className="text-3xl">NextUI</NavbarBrand>
+        <NavbarBrand className="text-3xl font-[400]">NextUI</NavbarBrand>
         {/* version button start */}
         <Dropdown className="max-sm:hidden">
           <DropdownTrigger>
             <Button
               endContent={<MdOutlineKeyboardArrowDown className="text-base" />}
               size="sm"
-              className="bg-[#202022] text-white py-0 rounded-full max-sm:hidden"
+              className="bg-[#202022] text-white py-1 rounded-full max-sm:hidden"
             >
               v2.2.10
             </Button>

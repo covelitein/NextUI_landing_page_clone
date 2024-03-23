@@ -1,4 +1,4 @@
-import { Welcome, Header, Features, About } from "@/sections";
+import { Welcome, Header, Features, About, Support } from "@/sections";
 
 export default function Home() {
   return (
@@ -14,6 +14,10 @@ export default function Home() {
       {/* features start */}
       <Features />
       {/* features end */}
+
+      {/* support start */}
+      <Support />
+      {/* support end */}
 
       {/* about start */}
       <About />
