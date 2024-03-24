@@ -6,6 +6,7 @@ import {
   Support,
   Accessibility,
   Themes,
+  Customization,
 } from "@/sections";
 
 export default function Home() {
@@ -37,6 +38,10 @@ export default function Home() {
 
       {/* about start */}
       <Themes />
+      {/* about end */}
+
+      {/* about start */}
+      <Customization />
       {/* about end */}
     </main>
   );
