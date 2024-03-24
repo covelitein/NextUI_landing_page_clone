@@ -28,7 +28,7 @@ export default function ExtendedFeatures() {
           {data.id == 1 ? (
             <>
               All NextUI components already include the{" "}
-              <Code className="text-white bg-[#19191c]">"use client"</Code>{" "}
+              <Code className="text-white bg-[#19191c]">&quot;use client&quot;</Code>{" "}
               directive, which means you can import and use them directly in
               your RSC.
             </>
