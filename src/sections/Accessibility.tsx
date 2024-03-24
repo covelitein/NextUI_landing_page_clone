@@ -6,7 +6,7 @@ import { accessibilityBulletPoint } from "@/constants";
 
 export default function Accessibility() {
   const bulletPoints = accessibilityBulletPoint.map((bulletPoint) => (
-    <div className="px-6 py-5 rounded-xl flex items-center gap-4 bg-[rgba(255,255,255,0.06)]">
+    <div key={bulletPoint.id} className="px-6 py-5 rounded-xl flex items-center gap-4 bg-[rgba(255,255,255,0.06)]">
       {bulletPoint.icon}
       <h3 className="font-bold">{bulletPoint.point}</h3>
     </div>
