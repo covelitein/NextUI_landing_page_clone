@@ -1,4 +1,12 @@
-import { Welcome, Header, Features, About, Support, Accessibility } from "@/sections";
+import {
+  Welcome,
+  Header,
+  Features,
+  About,
+  Support,
+  Accessibility,
+  Themes,
+} from "@/sections";
 
 export default function Home() {
   return (
@@ -25,6 +33,10 @@ export default function Home() {
 
       {/* about start */}
       <Accessibility />
+      {/* about end */}
+
+      {/* about start */}
+      <Themes />
       {/* about end */}
     </main>
   );

@@ -26,7 +26,7 @@ const config = {
          sd: "400px",
        },
       colors: {
-        mainColor:"#1a434d",
+        mainColor:"#fff",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -37,7 +37,7 @@ const config = {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#22c55e",
+          DEFAULT: "#fff",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {

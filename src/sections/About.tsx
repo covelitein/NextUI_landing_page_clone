@@ -86,7 +86,7 @@ export default function About() {
 
             {/* learn button start */}
             <div className="mt-7">
-               <Button className="text-sm text-[#015bc4] bg-[#031726] rounded-full -py-5 px-3">Learn more</Button>
+               <Button size="sm" className="text-[0.75rem] text-[#015bc4] bg-[#031726] rounded-full -py-5 px-3">Learn more</Button>
             </div>
             {/* learn button end */}
           </div>
