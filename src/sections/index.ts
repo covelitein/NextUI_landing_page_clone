@@ -5,6 +5,8 @@ import About from "./About";
 import Accessibility from "./Accessibility";
 import Themes from "./Themes";
 import Customization from "./Customization";
+import ExtendedFeatures from "./ExtendedFeatures";
+import Contributions from "./Contributions";
 import Support from "./Support";
 import Container from "./Container";
 import Footer from "./Footer";
@@ -16,8 +18,10 @@ export {
     Footer,
     Features,
     About,
-    Accessibility,
-    Customization,
     Themes,
     Support,
+    Accessibility,
+    Customization,
+    ExtendedFeatures,
+    Contributions,
 }

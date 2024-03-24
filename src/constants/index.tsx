@@ -61,3 +61,54 @@ export const accessibilityBulletPoint = [
         icon: <Image src='/svgs/bullet_typehead.svg' alt=''/>,
     },
 ]
+
+export const extendedFeaturesData = [
+    {
+        id:1,
+        heading:'React server components',
+        desc:'',
+        icon: <Image src="/svgs/extended_server.svg" alt="" />,
+    },
+    {
+        id:2,
+        heading:'Accessible components',
+        desc:'NextUI components follow the WAI-ARIA guidelines, provide keyboard support and sensible focus management',
+        icon: <Image src="/svgs/extended_accesible.svg" alt="" />,
+    },
+    {
+        id:3,
+        heading:'Focus interactions',
+        desc:'Focus ring will appear only when user navigates with keyboard or screen reader.',
+        icon: <Image src="/svgs/extended_focus.svg" alt="" />,
+    },
+    {
+        id:4,
+        heading:'Multiple packages',
+        desc:'NextUI is divided into multiple packages, so you can install only the components you need.',
+        icon: <Image src="/svgs/extended_packages.svg" alt="" />,
+    },
+    {
+        id:5,
+        heading:'Typescript based',
+        desc:'Build type safe applications, NextUI has a fully typed API to minimize learning curve, and help you build applications.',
+        icon: <Image src="/svgs/extended_typescript.svg" alt="" />,
+    },
+    {
+        id:6,
+        heading:'Override components tags',
+        desc:'A polymorphic `as` prop is included in all NextUI components.',
+        icon: <Image src="/svgs/extended_tags.svg" alt="" />,
+    },
+    {
+        id:7,
+        heading:'No runtime styles',
+        desc:'NextUI is based on Tailwind CSS, it means that there are no runtime styles, and no unnecessary classes in your bundle.',
+        icon: <Image src="/svgs/bolt.svg" alt="" />,
+    },
+    {
+        id:8,
+        heading:'Beautifully designed',
+        desc:'NextUI components are unique and are not tied to any visual trend or design rule, which makes us unique and of course your projects as well.',
+        icon: <Image src="/svgs/magicwand.svg" alt="" />,
+    },
+]
