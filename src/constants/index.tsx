@@ -1,6 +1,7 @@
 import { TbBolt, TbMoon } from 'react-icons/tb'
 import { PiDevicesBold, PiMagicWand } from 'react-icons/pi'
 import { Image } from '@nextui-org/react'
+import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa6'
 
 export const featuresData = [
     {
@@ -110,5 +111,26 @@ export const extendedFeaturesData = [
         heading:'Beautifully designed',
         desc:'NextUI components are unique and are not tied to any visual trend or design rule, which makes us unique and of course your projects as well.',
         icon: <Image src="/svgs/magicwand.svg" alt="" />,
+    },
+]
+
+export const communityData = [
+    {
+        id:1,
+        handle: 'Twitter',
+        desc: 'For announcements, tips and general information.',
+        icon: <FaTwitter className="text-2xl text-[#00acee]"/>,
+    },
+    {
+        id:2,
+        handle: 'Discord',
+        desc: 'To get involved in the community, ask questions and share tips.',
+        icon: <FaDiscord className="text-2xl text-[#7289da]"/>,
+    },
+    {
+        id:3,
+        handle: 'Github',
+        desc: 'To report bugs, request features and contribute to the project.',
+        icon: <FaGithub className="text-2xl text-[#ffffff]"/>,
     },
 ]
