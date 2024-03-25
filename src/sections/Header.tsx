@@ -120,8 +120,13 @@ const Header = () => {
             startContent={
               <motion.div
                 whileHover={{
-                  scale: 1.2,
-                  transition: { duration: 1 },
+                  scale: [1, 1.2, 1],
+                  transition:{
+                    duration:2,
+                    repeat: Infinity,
+                    repeatType: 'reverse',
+                    ease:'linear'
+                  }
                 }}
               >
                 <RiHeart3Fill  className="text-[#f31260] text-2xl" />

@@ -9,7 +9,6 @@ import {
   Customization,
   ExtendedFeatures,
   Contributions,
-  Footer,
 } from "@/sections";
 
 export default function Home() {
@@ -55,9 +54,6 @@ export default function Home() {
       <Contributions />
       {/* contributions end */}
 
-      {/* footer start */}
-      <Footer />
-      {/* footer end */}
     </main>
   );
 }

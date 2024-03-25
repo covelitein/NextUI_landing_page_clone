@@ -9,13 +9,11 @@ import ExtendedFeatures from "./ExtendedFeatures";
 import Contributions from "./Contributions";
 import Support from "./Support";
 import Container from "./Container";
-import Footer from "./Footer";
 
 export {
     Header,
     Welcome,
     Container,
-    Footer,
     Features,
     About,
     Themes,

@@ -4,6 +4,8 @@ import { Button } from "@nextui-org/react";
 import { Container } from ".";
 import { FaGithub } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { HeroBlurredCard, HeroPostCard } from "@/components/custom";
+import { motion } from 'framer-motion'
 
 export default function Welcome() {
 
@@ -41,8 +43,24 @@ export default function Welcome() {
         {/* writeup col end */}
 
         {/* animation start */}
-        <div className="max-lg:hidden">
-
+        <div className="max-lg:hidden relative">
+          <HeroPostCard className="absolute top-[13rem] left-16"/>
+          <motion.div
+           animate={{
+            y: [30, 0]
+           }}
+           className="absolute bottom-[4rem] right-16 z-[1]"
+           transition={{
+             duration:4,
+             repeat: Infinity,
+             repeatType: 'reverse',
+             ease:'linear'
+           }}
+          >
+            <HeroBlurredCard className=" "/>
+            
+          </motion.div>
+          <Button size="sm" className="absolute bottom-[13rem] z-[2] left-[7rem] bg-[#985cd5] text-white cursor-text hover:bg-[#985cd5] rounded-xl text-[0.9rem] py-0 px-3">Developers love Next.js</Button>
         </div>
         {/* writeup col end */}
 
