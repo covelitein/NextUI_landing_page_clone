@@ -32,7 +32,7 @@ export default function HeroPostCard({ className } : any) {
         <Button
           className={
             isFollowed
-              ? "bg-transparent text-foreground border-default-200"
+              ? "bg-transparent text-default-200 border-default-200"
               : "bg-[#0070f0] text-white"
           }
           radius="full"
