@@ -24,25 +24,55 @@ export default function Customization() {
                 className="text-[#a1a1aa] text-xl"
               >
                 Tailwind Variants
-              </Link>{", "}
-               it simplifies component slots customization while avoiding Tailwind class conflicts.
+              </Link>
+              {", "}
+              it simplifies component slots customization while avoiding
+              Tailwind class conflicts.
             </h5>
           </div>
         </div>
         {/* heading end */}
 
         {/* main start */}
-            <main className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-16">
-                {/* code block start */}
-                  <div className=""></div>
-                {/* code block end */}
+        <main className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-16">
+          {/* code block start */}
+          <div className="max-h-[320px] bg-[#0b0b0c] rounded-2xl p-5 overflow-scroll text-sm">
+            {/* code snippet start */}
+            <div className="">
+              {`import `}
+              <span className="">{`React `}</span>
+              {` from `}
+              <span className="">{` 'react';`}</span>
+            </div>
 
-                {/* result start */}
-                  <div className="min-h-[320px] h-full flex justify-center items-center py-12 px-8 bg-gradient-to-tr from-[#ff72e1] to-[#f54c7a] rounded-2xl">
-                     <ConfettiBtn />
-                  </div>
-                {/* result end */}
-            </main>
+            <div className="">
+              {`import `}
+              <span className="">{` {Button} `}</span>
+              {` from `}
+              <span className="">{`  '@nextui-org/react';`}</span>
+            </div>
+
+            <div className="">
+              {`import `}
+              <span className="">{`confetti `}</span>
+              {`from `}
+              <span className="">{`'canvas-confetti';`}</span>
+            </div>
+
+            <div className="">
+              {``}
+            </div>
+
+            {/* code snippet end */}
+          </div>
+          {/* code block end */}
+
+          {/* result start */}
+          <div className="min-h-[320px] h-full flex justify-center items-center py-12 px-8 bg-gradient-to-tr from-[#ff72e1] to-[#f54c7a] rounded-2xl">
+            <ConfettiBtn />
+          </div>
+          {/* result end */}
+        </main>
         {/* main end */}
       </Container>
     </section>

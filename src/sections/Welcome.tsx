@@ -8,6 +8,9 @@ import {
   Image,
   Tabs,
   Tab,
+  Spinner,
+  Pagination,
+  Input,
 } from "@nextui-org/react";
 import { Container } from ".";
 import { FaGithub } from "react-icons/fa";
@@ -21,7 +24,7 @@ import { motion } from "framer-motion";
 
 export default function Welcome() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden min-h-screen">
       {/* absolute looper start */}
       <div
         className="absolute -top-20 lg:top-10 w-screen h-screen z-0 opacity-0 overflow-hidden data-[mounted=true]:opacity-100 transition-opacity bg-left looper-bg after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1]  after:z-[-1]"
@@ -160,7 +163,7 @@ export default function Welcome() {
             animate={{
               y: [0, 20],
             }}
-            className="absolute top-[13rem] right-24 z-[2]"
+            className="absolute top-[13rem] right-[7.3rem] z-[2]"
             transition={{
               delay: 3,
               duration: 3,
@@ -228,6 +231,80 @@ export default function Welcome() {
             <SwitchButton />
           </motion.div>
           {/* switch button end */}
+
+          {/* spinner start */}
+          <motion.div
+            transition={{
+              delay: 5,
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear",
+            }}
+            animate={{
+              y: [0, 30],
+            }}
+            className="absolute top-[20rem] right-1"
+          >
+            <Card className="p-5 bg-[#18181b]">
+              <Spinner color="primary" />
+            </Card>
+          </motion.div>
+          {/* spinner end */}
+
+          {/* pagination start */}
+          <motion.div
+            transition={{
+              delay: 5,
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear",
+            }}
+            animate={{
+              y: [0, 20],
+            }}
+            className="absolute top-[16rem] -right-[14rem]"
+          >
+            <Pagination
+              variant="flat"
+              isCompact
+              showControls
+              showShadow
+              total={10}
+              initialPage={1}
+              classNames={{
+                item: "bg-[#18181b] text-white group-data-[hover=true]:bg-white/10",
+                cursor: "bg-[#006fee] group-data-[hover=true]:bg-red-500",
+                next: "bg-[#18181b] text-white",
+                prev: "bg-[#18181b] hover:bg-transparent text-white",
+                ellipsis: "group-data-[hover=true]:bg-white/10",
+              }}
+            />
+          </motion.div>
+          {/* pagination end */}
+
+          {/* input start */}
+          <motion.div transition={{
+              delay: 5,
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear",
+            }}
+            animate={{
+              y: [20, 0],
+            }} className="absolute top-[10rem] -right-[8rem]">
+            <Input
+              type="text"
+              color="primary"
+              defaultValue="NextUi"
+              labelPlacement="outside"
+              variant={"bordered"}
+              label="Input"
+            />
+          </motion.div>
+          {/* input end */}
         </div>
         {/* writeup col end */}
       </Container>

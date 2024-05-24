@@ -2,7 +2,15 @@
 
 import React, { useState } from "react";
 import { Container } from ".";
-import { Button, Card, CardBody, Code, Image, Progress, Slider } from "@nextui-org/react";
+import {
+  Button,
+  Card,
+  CardBody,
+  Code,
+  Image,
+  Progress,
+  Slider,
+} from "@nextui-org/react";
 import {
   HeartIcon,
   NextIcon,
@@ -44,9 +52,7 @@ export default function Themes() {
           <div className=" bg-gradient-to-b from-[#ff705b] to-[#ffb457] py-8 px-5 rounded-lg">
             <Card
               isBlurred
-              className={clsx(
-                "border-none bg-black/30 text-white"
-              )}
+              className={clsx("border-none bg-black/30 text-white")}
               shadow="sm"
             >
               <CardBody>
@@ -92,14 +98,15 @@ export default function Themes() {
 
                     <div className="flex flex-col mt-3 gap-1">
                       <Slider
-                         aria-label="Music progress"
-                         classNames={{
-                           track: "bg-default-500/30",
-                           thumb: "w-2 h-2 after:w-2 after:h-2 bg-default after:bg-white",
-                         }}
-                         color="secondary"
-                         defaultValue={33}
-                         size="sm"
+                        aria-label="Music progress"
+                        classNames={{
+                          track: "bg-default-500/30",
+                          thumb:
+                            "w-2 h-2 after:w-2 after:h-2 bg-default after:bg-white",
+                        }}
+                        color="secondary"
+                        defaultValue={33}
+                        size="sm"
                       />
                       <div className="flex justify-between">
                         <p className="text-sm text-default/50">1:23</p>
@@ -122,7 +129,7 @@ export default function Themes() {
                         radius="full"
                         variant="light"
                       >
-                        <PreviousIcon className="text-white"/>
+                        <PreviousIcon className="text-white" />
                       </Button>
                       <Button
                         isIconOnly
@@ -138,7 +145,7 @@ export default function Themes() {
                         radius="full"
                         variant="light"
                       >
-                        <NextIcon className="text-white"/>
+                        <NextIcon className="text-white" />
                       </Button>
                       <Button
                         isIconOnly
@@ -155,6 +162,25 @@ export default function Themes() {
             </Card>
           </div>
           {/* example end */}
+
+          {/* code start */}
+          <div className="bg-[#0b0b0c] max-h-[320px] rounded-2xl overflow-scroll p-5 text-sm text-[#71717a] font-[500]">
+            {/* code snippet start */}
+            <div>{`import React from "react";`}</div>
+            <div>{`import {NextUIProvider} from "@nextui-org/react";`}</div>
+            <div className="mt-5">{`const Application = ({Component, pageProps}) => {`}</div>
+            <div className="ml-4">{`return (`}</div>
+            <div className="ml-10">{`<NextUIProvider>`}</div>
+            <div className="ml-16">{`<main className={isDark ? "dark" : "light"}>`}</div>
+            <div className="ml-24">{` <Component {...pageProps} />`}</div>
+            <div className="ml-16">{`</main>`}</div>
+            <div className="ml-10">{`</NextUIProvider>`}</div>
+            <div className="ml-5">{`);`}</div>
+            <div className="">{`);`}</div>
+            <div className="mt-8">{`export default Application; `}</div>
+            {/* code snippet end */}
+          </div>
+          {/* code end */}
         </main>
         {/* main content end */}
       </Container>

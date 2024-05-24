@@ -5,15 +5,17 @@ import confetti from "canvas-confetti";
 import { useRef } from "react";
 
 const ConfettiBtn = () => {
-  const buttonRef = useRef(null);
+  const buttonRef = useRef<any>(null);
   const handleConfetti = () => {
+    const buttonRect = buttonRef?.current?.getBoundingClientRect();
+    const x = buttonRect.left + buttonRect.width / 2;
+    const y = buttonRect.top + buttonRect.height / 2;
     confetti({
       particleCount: 80,
       spread: 50,
       origin: {
-        x: 0.73,
-        // since they fall down, start a bit higher than random
-        y: 0.6,
+        x: x / window.innerWidth,
+        y: y / window.innerHeight,
       },
       resize: true,
     });
